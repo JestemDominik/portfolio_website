@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 export const metadata: Metadata = {
   title: "Dominik Grzelak | Data & AI Executive",
   description: "Portfolio of high-performance CTO, delivering business impact through AI and data.",
+  openGraph: {
+    images: ["/og-image.jpeg"],
+  },
 };
 
 export default function RootLayout({
