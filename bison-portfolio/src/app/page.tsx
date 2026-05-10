@@ -48,7 +48,7 @@ export default function Home() {
             </motion.div>
             
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
-              Łączę AI, dane i egzekucję, aby <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">dowozić wynik.</span>
+              Łączę AI, dane i egzekucję, aby <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">dowozić wynik</span>
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-xl text-zinc-400 max-w-2xl leading-relaxed">
@@ -117,32 +117,41 @@ export default function Home() {
       </section>
 
       {/* Mission */}
-      <section className="py-24 border-b border-zinc-800/50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/5 pointer-events-none" />
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <section className="py-24 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="space-y-8"
+            className="relative rounded-3xl border border-zinc-700/50 bg-zinc-900/40 p-8 md:p-16 backdrop-blur-sm overflow-hidden shadow-2xl"
           >
-            <div className="inline-flex items-center justify-center p-4 bg-zinc-900 rounded-2xl mb-2 border border-zinc-800 shadow-2xl shadow-blue-900/20">
-              <Target className="w-8 h-8 text-blue-400" />
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
-              Misja.
-            </h2>
-            <div className="space-y-6 text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
-              <p>
-                Uważam, że rola człowieka przechodzi z operatora narzędzi do <strong className="text-blue-400 font-semibold">kreatora przyszłości</strong>.
-              </p>
-              <p>
-                Moją misją jest budowanie ekosystemów łączących biznes i technologię tak, aby ludzie mogli działać bardziej kreatywnie, odważnie i zgodnie z tym, co naprawdę chcą budować.
-              </p>
-              <p className="text-lg md:text-xl text-zinc-500 mt-8 pt-8 border-t border-zinc-800/50">
-                Wraz z zespołem projektuję i wdrażam systemy AI, które zwiększają efektywność organizacji i uwalniają potencjał ludzi w każdym obszarze firmy. Najbardziej ekscytuje mnie odkrywanie nowych możliwości, jakie daje technologia, oraz budowanie rzeczy, które realnie zmieniają sposób pracy i działania zespołów.
-              </p>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 pointer-events-none" />
+            <div className="absolute -top-24 -left-24 w-64 h-64 bg-blue-500/10 blur-3xl rounded-full pointer-events-none" />
+            <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-purple-500/10 blur-3xl rounded-full pointer-events-none" />
+            
+            <div className="relative z-10 flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center">
+              <div className="md:w-1/3">
+                <div className="inline-flex items-center justify-center p-4 bg-zinc-800/80 rounded-2xl mb-6 border border-zinc-700 shadow-xl">
+                  <Target className="w-8 h-8 text-blue-400" />
+                </div>
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
+                  Misja
+                </h2>
+                <div className="h-1 w-12 bg-blue-500 rounded-full"></div>
+              </div>
+              
+              <div className="md:w-2/3 space-y-6 text-lg md:text-xl text-zinc-300 font-light leading-relaxed">
+                <p className="text-2xl text-white font-medium leading-snug">
+                  Rola człowieka przechodzi z operatora narzędzi do <span className="text-blue-400 font-bold">kreatora przyszłości</span>.
+                </p>
+                <p>
+                  Moją misją jest budowanie ekosystemów łączących biznes i technologię tak, aby ludzie mogli działać bardziej kreatywnie, odważnie i zgodnie z tym, co naprawdę chcą budować.
+                </p>
+                <p className="text-base text-zinc-400 pt-6 border-t border-zinc-800/80">
+                  Wraz z zespołem projektuję i wdrażam systemy AI, które zwiększają efektywność organizacji i uwalniają potencjał ludzi w każdym obszarze firmy. Najbardziej ekscytuje mnie odkrywanie nowych możliwości technologii oraz budowanie rozwiązań, które realnie zmieniają sposób pracy.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -157,8 +166,8 @@ export default function Home() {
           variants={fadeIn}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Track Record.</h2>
-          <p className="text-zinc-400 text-lg max-w-2xl">Wybrane wdrożenia łączące technologię z realnym ROI biznesowym.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Track Record</h2>
+          <p className="text-zinc-400 text-lg max-w-2xl">Wybrane wdrożenia łączące technologię z realnym ROI biznesowym</p>
         </motion.div>
 
         <div className="space-y-12">
@@ -380,7 +389,7 @@ export default function Home() {
             variants={fadeIn}
             className="mb-16 md:text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Operating Model.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Operating Model</h2>
             <p className="text-zinc-400 text-lg max-w-2xl md:mx-auto">Zasady, według których dostarczam wartość biznesową.</p>
           </motion.div>
 
@@ -441,7 +450,7 @@ export default function Home() {
       {/* Footer / CTA */}
       <footer id="contact" className="py-20 border-t border-zinc-800 bg-zinc-950 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">Gotowy na wyzwanie technologiczne.</h2>
+          <h2 className="text-3xl font-bold mb-6">Gotowy na wyzwanie technologiczne</h2>
           <p className="text-zinc-400 mb-8">
             Jeśli ten profil odpowiada standardom Bison Fellowship, porozmawiajmy o wartości, jaką wniosę do projektów partnerskich.
           </p>
