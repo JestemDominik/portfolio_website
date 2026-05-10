@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, BarChart3, Bot, ChevronRight, Code2, LineChart, Network, Terminal, Zap } from "lucide-react";
+import { ArrowRight, BarChart3, Bot, ChevronRight, Code2, LineChart, Network, Terminal, Zap, Target } from "lucide-react";
 
 const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -112,6 +112,38 @@ export default function Home() {
               label="Ukończone programy DS & ML"
               isText
             />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="py-24 border-b border-zinc-800/50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/5 pointer-events-none" />
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className="space-y-8"
+          >
+            <div className="inline-flex items-center justify-center p-4 bg-zinc-900 rounded-2xl mb-2 border border-zinc-800 shadow-2xl shadow-blue-900/20">
+              <Target className="w-8 h-8 text-blue-400" />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
+              Misja.
+            </h2>
+            <div className="space-y-6 text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
+              <p>
+                Uważam, że rola człowieka przechodzi z operatora narzędzi do <strong className="text-blue-400 font-semibold">kreatora przyszłości</strong>.
+              </p>
+              <p>
+                Moją misją jest budowanie ekosystemów łączących biznes i technologię tak, aby ludzie mogli działać bardziej kreatywnie, odważnie i zgodnie z tym, co naprawdę chcą budować.
+              </p>
+              <p className="text-lg md:text-xl text-zinc-500 mt-8 pt-8 border-t border-zinc-800/50">
+                Wraz z zespołem projektuję i wdrażam systemy AI, które zwiększają efektywność organizacji i uwalniają potencjał ludzi w każdym obszarze firmy. Najbardziej ekscytuje mnie odkrywanie nowych możliwości, jakie daje technologia, oraz budowanie rzeczy, które realnie zmieniają sposób pracy i działania zespołów.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
